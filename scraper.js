@@ -15,6 +15,7 @@ const asyncGet = util.promisify(client.get).bind(client);
 const asyncSet = util.promisify(client.set).bind(client);
 
 const cacheTtl = process.env.REDIS_EXPIRE;
+
 /**
  * Listi af sviðum með „slug“ fyrir vefþjónustu og viðbættum upplýsingum til
  * að geta sótt gögn.
